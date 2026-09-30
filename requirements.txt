@@ -1,0 +1,16 @@
+flask
+gunicorn
+requests
+langchain-core
+langchain-community
+langchain-huggingface
+langchain-chroma
+langchain-groq
+langchain-text-splitters
+rank_bm25
+chromadb
+sentence-transformers
+torch
+transformers
+Pillow
+qwen-vl-utils
