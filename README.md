@@ -4,12 +4,7 @@ A multimodal Retrieval-Augmented Generation (RAG) system that allows users to up
 
 Unlike a traditional text-only RAG system, this project is designed to handle **research-paper content including text, tables, figures, and diagrams**, making it suitable for scientific and technical documents.
 
----
 
-## 🚀 Live Demo
-
-🔗 **Live Application:**  
-https://YOUR-RENDER-URL.onrender.com
 
 ---
 
