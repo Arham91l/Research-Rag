@@ -1,0 +1,113 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  background: #0f1117;
+  color: #e5e7eb;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  padding: 20px;
+  background: #161923;
+  border-right: 1px solid #2a2f3d;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.sidebar input[type="file"] {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 8px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar button:hover { background: #4338ca; }
+.sidebar button:disabled { background: #374151; cursor: not-allowed; }
+
+.status-box {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #9ca3af;
+  white-space: pre-wrap;
+}
+
+.main {
+  flex: 1;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main h1 { margin: 0 0 4px 0; font-size: 22px; }
+.subtitle { color: #9ca3af; margin: 0 0 16px 0; font-size: 14px; }
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #2a2f3d;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #12141c;
+}
+
+.msg { margin-bottom: 16px; }
+.msg.user .bubble { background: #4f46e5; margin-left: auto; }
+.msg.assistant .bubble { background: #1f2430; }
+.bubble {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+.msg.user { display: flex; justify-content: flex-end; }
+
+.sources {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+.sources details { margin-bottom: 8px; border: 1px solid #2a2f3d; border-radius: 6px; padding: 6px 10px; }
+.sources img { max-width: 260px; display: block; margin-top: 6px; border-radius: 4px; }
+
+.chat-form { display: flex; gap: 8px; }
+.chat-form input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2a2f3d;
+  background: #12141c;
+  color: #e5e7eb;
+}
+.chat-form button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+.chat-form button:disabled { background: #374151; cursor: not-allowed; }

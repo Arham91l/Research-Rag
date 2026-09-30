@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Research Paper Intelligence System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h2>📚 Research Paper</h2>
+    <input type="file" id="fileInput" accept="application/pdf">
+    <button id="uploadBtn">Upload &amp; Index</button>
+    <div id="uploadStatus" class="status-box"></div>
+  </aside>
+
+  <main class="main">
+    <h1>📄 Research Paper Intelligence System</h1>
+    <p class="subtitle">Upload any research paper and ask questions about its text, tables and figures.</p>
+
+    <div id="chatWindow" class="chat-window"></div>
+
+    <form id="chatForm" class="chat-form">
+      <input type="text" id="questionInput" placeholder="Ask a question about this research paper..." autocomplete="off" disabled>
+      <button type="submit" id="askBtn" disabled>Ask</button>
+    </form>
+  </main>
+
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
